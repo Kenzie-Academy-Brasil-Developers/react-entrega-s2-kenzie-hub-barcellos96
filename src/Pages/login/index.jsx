@@ -34,6 +34,8 @@ function Login({ authenticated, setAuthenticated }) {
   const history = useHistory();
 
   const onSubmitFucntion = (data) => {
+    console.log("data ", data);
+
     api
       .post("sessions", data)
       .then((response) => {

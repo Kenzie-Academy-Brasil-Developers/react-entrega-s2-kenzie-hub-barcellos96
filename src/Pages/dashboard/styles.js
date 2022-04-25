@@ -1,5 +1,31 @@
 import styled from "styled-components";
 
+export const InputContainer = styled.form`
+  flex: 1;
+  padding: 0 38px;
+  margin-bottom: 20px;
+  > .section-btn {
+    display: flex;
+    > .btn-confirm {
+      width: 40vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+    }
+  }
+  .section-input {
+    display: flex;
+    div {
+      margin-right: 16px;
+    }
+
+    .input {
+      width: 20vw;
+    }
+  }
+`;
+
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
